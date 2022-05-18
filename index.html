@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<main>
+  <div class="flex-container">
+    <div id="title">
+      <h1>
+        The Wright Way Mortgage Company Survey
+      </h1>
+    </div>
+    <div id="description">
+      <p>
+        <strong>Find out what mortgage refinance is best for you!</strong>
+      </p>
+    </div>
+    <form id="survey-form">
+      <div class="name">
+        <label for="name">
+          Name
+        </label>
+        <input type="text"
+               placeholder="name"
+               name="name"
+               class="name regular-input small-input"
+               id="name-label"
+               required
+               />
+      </div>
+      <div class="email">
+        <label for="email">
+          Email
+        </label>
+        <input type="email"
+               placeholder="email"
+               name="email"
+               class="regular-input small-input"
+               id="email-label"
+               required
+               />
+      </div>
+      <div class="balance">
+        <label for="balance">
+          Current Loan Balance
+        </label>
+        <input type="number"
+               placeholder="loan balance"
+               name="balance"
+               class="balance regular-input small-input"
+               id="number-label"
+               min="65000"
+               max="3000000"
+               required
+               />
+      </div>
+      <div class="loan-type">
+        <label for="loan-type">
+          Current Loan Type
+        </label>
+        <select id="dropdown"class="regular-input small-input" name="loan-type">
+          <option value="null" selected disabled>
+            ---
+          </option>
+          <option value="Conventional">
+            Conventional
+          </option>
+          <option value="FHA">
+            FHA
+          </option>
+          <option value="VA">
+            VA
+          </option>
+          <option value="Non-conforming">
+            Non-Conforming
+          </option>
+        </select>
+      </div>
+      <div class="number-of-loans">
+
+      </div>
+      <div class="loan-purpose">
+        <p><strong>New loan Purpose</strong>
+        </p>
+        <input type="radio" value="Get-cash-out" name="new-loan-purpose" />
+        <label for="Get-cash-out">Get Cash Out
+        </label><br>
+        <input type="radio" value="lower-rate" name="new-loan-purpose" />
+        <label for="Get-cash-out">Lower my Interest Rate
+        </label><br>
+        <input type="radio" value="remove-mortgage-insurance" name="new-loan-purpose" /><label for="Get-cash-out"> Remove Mortgage Insurance
+        </label><br>
+      </div>
+      <br/>
+      <div id="textarea">
+        <label for="comments">
+          Other Comments:
+        </label>
+        <textarea id="comments" class="regular-input" rows="4" col="50">
+        </textarea>
+      </div>
+        <div id="submit">
+        <input type="submit" id="submit"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+</html>
